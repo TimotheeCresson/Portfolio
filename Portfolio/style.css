@@ -9,10 +9,29 @@
     src: url("../font/RampartOne-Regular.ttf");
 }
 
+/*------------------- Default ----------------------------*/
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+}
+*{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
 /* ------------------- Présentation -----------------*/
 body {
-    background-color: #073513e0;
-    min-height: 100vh;
+    background-color: #051D0B;
+    height: auto;
+    overflow-x: hidden;
 }
 .header {
     display: grid;
@@ -20,7 +39,7 @@ body {
 }
 .indexentête{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto 100px auto;
     grid-template-rows: auto auto;
     justify-content: space-evenly;
     align-items: center;
@@ -34,9 +53,11 @@ body {
     border-radius: 3em;
     font-size: 1em;
     width: 27vw;
+    max-width: 900px;
     text-align: center;
     border: 2px solid white;
     text-wrap: 2px;
+    text-align: center;
 }
 .indexentête a:nth-child(2) {
     grid-row: 2;
@@ -50,7 +71,7 @@ body {
 .logo{
     grid-row: 1;
     grid-column: 2;
-    height: 5vh;
+    height: 3rem;
     padding-left: 36px;
     padding-top: 12px;
 }
@@ -60,21 +81,26 @@ header .midpage{
     grid-template-columns: 20% 1fr 20%;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 2%;
 }
 .centerimg {
     grid-column: 2;
-    height: 20vh;
-    width: 45vw;
+    height: 50%;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 3px;
 }
-.right p{
+.right {
     grid-column: 3;
     writing-mode: vertical-rl;
     text-orientation: upright;
     font-family: RampartOne;
-    font-size: 45px;
+    font-size: 33px;
+    letter-spacing: .3em;
+    color: white; 
+    text-transform: uppercase;
+}
+.right p {
+    text-shadow: 10px 10px #00FFE0;
 }
 .left {
     display: flex;
@@ -86,56 +112,134 @@ header .midpage{
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
     border-radius: 0 5em 5em 0; 
-    height : 40vh;
-    width  : 10vw;
+    height : 25rem;
+    width  : 3rem;
 }
 .comp {
-    grid-row: 2;
-    height: 5vh; 
-    width: 15vw;
+    height: 3rem; 
+    width: 3rem;
     margin-left: 6px; 
 }
 .mail {
-    grid-row: 3;
-    height: 3vh;
-    width: 7vw;
+    height: 1.5rem;
+    width: 2rem;
     margin-left: 6px;
 }
 .exp {
-    height: 3vh;
-    width: 7vw;
+    height: 1.5rem;
+    width: 2rem;
     margin-left: 6px;
-}
-.presentation div {
-position: absolute;
-width: 100vw;
-height: 30vh;
-left: -40%;
-top: 50vh;
-background: radial-gradient(49.8% 59.8% at 40% 80.2%, #089C2D 20%, rgba(23, 29, 61, 0) 100%);
-filter: blur(50px);
 }
 .presentation {
     color: white;
     text-align: center;
-    background: #103119;
-    border: 4px solid white;
-    border-style: double;
+    background: #083614;
+    border: 4px solid #0dc5c5c7;
+    border-style: groove blue;
     border-radius: 1em;
     font-size: 1em;
-    width: 75%;
-    padding-top: 10px;
-    margin-left: 13%;
-    height: 10vh;
-    margin-top: 30px;
+    width: 80vw;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
 }
+.border {
+    outline: 0.125rem solid #0dc5c5c7;
+    outline-offset: 0.25rem;
+    box-shadow: 5px 5px 10px 2px #04ecec67;
+}
+.presentation p {
+    text-align: center;
+    font-size: 1.2em;
+}
+.presentation div {
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    left: -40%;
+    top: 30rem;
+    background: radial-gradient(49.8% 59.8% at 40% 85.2%, #0dc5c5c7 100%, rgba(16, 34, 139, 0) 100%);
+    filter: blur(100px);
+    }
+
+/*------------------------Expérience ------------------------*/
+.expsection {
+    display: grid;
+    grid-template-rows: 20% auto auto 20%;
+    height: 40vh;
+    margin-top: 50px;
+}
+.workcontainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 2rem auto;
+    gap: 10px;
+    justify-content: space-around;
+}
+.work {
+    border-radius: 2em;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-rows: 1fr 1.5rem;
+    align-items: center;
+    height: 100%;
+    margin: 20px auto;
+    background: linear-gradient(#4b615e, #013f10);
+}
+.work p {
+    text-align: center;
+    margin-bottom: 2em;
+    letter-spacing: .1em;
+    padding: 1px;
+}
+.first {
+    margin-left: 10px;
+}
+.second {
+    margin-right: 10px;
+}
+
+.img-work img{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+.CV {
+    grid-row: 4;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------ compétence -----------------*/
 /*
-body.comp {
+.compsection {
     display: grid;
     background-color: #051D0B;
-    min-height: 100vh;
-    grid-template-rows: auto auto auto 1fr auto;
+    height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px;
+}
+.titlecomp {
+    color: white;
+    font-weight: bold;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 30px;
 }
 .entêtecomp {
     display: grid;
@@ -163,14 +267,6 @@ body.comp {
     background: lightgreen;
     grid-column-start: 3;
     grid-row-start: 1;
-}
-.titlecomp {
-    font-size: 3em;
-    color: white;
-    font-weight: bold;
-    grid-row-start: 2;
-    text-align: center;
-    margin-top: 30px;
 }
 .mid{
     position: relative;
@@ -216,6 +312,6 @@ li {
     display: inline-block;
 }
 */
-/* Rectangle 6 */
+
 
 
