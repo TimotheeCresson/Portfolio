@@ -1,105 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index du portfolio</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
         <!-------------------------- Présentation -------------------- -->
-    <header class="header">
+    <header class="header" id="home">
         <nav class="indexentête">
-            <a href="compétences.html">Compétences</a>
-            <a href="contact.html">Contact</a>
-            <a href="Expériences.html">Expériences</a>
-            <img class="logo" src="../img/logo2.png" alt="Logo du Portfolio">
+            <div class="entete">
+                <a class="enteteComp btn" href="#competence">Compétences</a>
+                <img class="logo" src="../img/logo2.png" alt="Logo du Portfolio">
+                <a class="enteteExp btn" 
+                href="#experience">Expériences</a>
+            </div>
+            <a class="enteteContact btn" href="#contact">Contact</a>
         </nav>
         <div class="midpage">
-                <img class="centerimg" src="../img/ordi.png" alt="photo" width="200" height="200" loading="lazy" decoding="async">
-            <aside class="right">
-                <p>Portfolio</p>
-            </aside>
-            <aside class="left">
-                <img class="exp" src="../img/exp.png" alt="icon exp">
-                <img class="comp" src="../img/comp.png" alt="icon comp">
-                <img class="mail" src="../img/email.png" alt="icon email">
-            </aside>
+            <img class="centerimg" src="../img/ordi.png" alt="photo" loading="lazy" decoding="async">
+        <aside class="right">
+            <p>Portfolio</p>
+        </aside>
+        <aside class="left">
+            <img class="exp" src="../img/exp.png" alt="icon exp">
+            <img class="comp" src="../img/comp.png" alt="icon comp">
+            <img class="mail" src="../img/email.png" alt="icon email">
+        </aside>
         </div>
-        <div class="presentation border">
-            <p>Je m'appelle Cresson Timothée, je suis actuellement en apprentissage dans une formation de Développement web</p> 
-            <div></div>
-        </div>
+            <div class="presentation">
+                <p>Je m'appelle Cresson Timothée, je suis actuellement en apprentissage dans une formation de Développement web</p> 
+            </div>
+            <div class="shadowLight"></div>
     </header>
-    
+        
 
     
     <!--------------------------- Expériences---------------------->
 
-    <section class="expsection">
-        <h1 class="titleexp">
-            Expériences
-        </h1>
+    <article class="expsection" id="experience">
+        <div class="alignTitleExp">
+            <h1 class="titleexp">
+                Expériences
+            </h1>
+            <img class="persoExp" src="../img/persoExp.png" alt="">
+        </div>
         <div class="workcontainer">
-            <article class="work first">
-            <span class="img-work">
-                <img src="../img/prep.png" alt="photo"   loading="lazy" decoding="async">
-            </span>
-            <p>Préparateur de commande</p>
-            </article>
-            <article class="work second">
-            <span class="img-work">
-                <img src="../img/runner.gif" alt="photo"   loading="lazy" decoding="async">
-            </span>
-            <p>runner en restauration</p>
-            </article>
-            <article class="work third">
-            <span class="img-work">
-                <img src="../img/finance.gif" alt="photo"   loading="lazy" decoding="async">
-            </span>
-            <p>Agent contractuel aux finances publiques</p>
-            </article>
+            <section class="work">
+                <img class= img-work src="../img/prep.png" alt="photo"   loading="lazy" decoding="async">
+                <div class="background">
+                    <p>Préparateur de commande</p>
+                </div>
+            </section>
+            <section class="work">
+                <img class="img-work" src="../img/runner.gif" alt="photo"   loading="lazy" decoding="async">
+                <div class="background">
+                    <p>runner en restauration</p>
+                </div>
+            </section>
         </div>
-        <div class="CV">
-            <p> Pour en savoir plus, n'hésitez pas à consulter mon CV ci-dessous</p>
-            <p> Mon Curriculum Vitae</p>
-        </div>
+        <section class="work third">
+            <img class="img-work" src="../img/finance.gif" alt="photo"   loading="lazy" decoding="async">
+            <div class="background">
+                <p>Agent contractuel aux finances publiques</p>
+            </div>
+        </section>
+            <div class="infoCV textCV">
+                <p> Pour en savoir plus, n'hésitez pas à consulter mon CV ci-dessous</p>
+            </div>
+            <a class="btn CV" href="#">Curriculum Vitae</a>
+    </article>
+            <!----------------------------- Compétences --------------------------->
+    <section class="compsection" id="competence">
+        <div class="alignTitleComp">
+            <div class="shadowLightComp"></div>
+            <h1 class="titlecomp">
+                Compétences
+            </h1>
+            <img class="persoComp" src="../img/persoComp.png" alt="photo" loading="lazy" decoding="async">
+            <div class="midComp">
+                <p>
+                    Exercé ces différents métiers, m'a permis de gagner de l'assurance et de la confiance en moi.
+                </p>
+            </div>
+            </div>
+            <div class="wheel">
+                <img class="roue" src="../img/imagecomp.png" alt="compétence roue">
+            </div> 
+            <article class="Projet">
+                <h3>
+                    Projet:
+                </h3>
+                <div class="projectLi">
+                    <ul>
+                        <li> - Devenir développeur web</li>
+                        <li> - Me spécialiser dans le front-end</li>
+                    </ul>
+                </div>
+            </article>
     </section>
-
-        <!----------------------------- Compétences --------------------------->
-     <!-- 
-    <section class="compsection">
-        <h1 class="titlecomp">
-            Compétences
-        </h1>
-        <div class="midcomp">
-            <p>
-                Exercé ces différents métiers, m'a permis de gagner de l'assurance et de la confiance en moi.
-            </p>
-        </div>
-        <div class="wheel">
-            <img class="roue" src="../img/imagecomp.png" alt="compétence roue">
-        </div> 
-        <article class="Projet">
-            <h3>
-                Projet:
-            </h3>
-        <ul>
-            <li> - Devenir développeur web</li>
-            <li> - Me spécialiser dans le front-end</li>
-        </ul>
-        </article>
-    </section>
---> 
 
     <!------------------------------ Contactez moi ------------------------------->
-<!--
-    <section class="entêtecontact">
+
+    <section class="entêtecontact" id="contact">
         <h1>Contactez moi</h1>
     <div class="return">
-        <img src="" alt="image Home">
-        <img src="" alt="image Expériences">
-        <img src="" alt="image Compétences">
+        <a href="#home">
+            <img src="../img/home.png" alt="image Home">
+        </a>
+            <a href="#home"><p>Home</p></a>
+        <a href="#experience">
+            <img src="../img/exp2.png" alt="image Expériences">
+        </a>
+        <a href="#experience"><p>Expériences</p></a>
+        <a href="#competence">
+            <img src="../img/comp.png" alt="image Compétences">
+        </a>
+        <a href="#competence"><p>Compétences</p></a>
     </div>
     </section>
     <article class="form">
@@ -108,18 +127,18 @@
         </h3>
         <form action="contact.html"></form>
         <div>
-            <label for="name">Votre nom</label>
-            <input class="name" type="text" name="text" id="text">
+            <label for="name"></label>
+            <input class="name inputColor" type="text" name="text" id="text" placeholder="Votre nom">
         </div>
         <div>
-            <label for="email">Votre email</label>
-            <input class="email" type="email"  required name="email" id="email" placeholder="@hotmail.fr">
+            <label for="email"></label>
+            <input class="email inputColor" type="email"  required name="email" id="email" placeholder="Votre email">
         </div>
         <div>
-            <label for="message">Votre message...</label>
-            <textarea name="message" id="messageme" cols="30" rows="10"></textarea>
+            <label for="message"></label>
+            <textarea name="message" class="inputColor" id="messageme" cols="30" rows="10" placeholder="Votre message..."></textarea>
         </div>
-        <button class="button">Envoyer</button>
+        <input class="Envoyer" type="submit" value="Envoyer">
     </article>
     
     <footer class="socialnetwork">
@@ -130,8 +149,8 @@
             <i class="fab fa-instagram"></i>
         </a>
     </footer>
--->
-    </body>
+ 
+</body>
 </html>
 
 
