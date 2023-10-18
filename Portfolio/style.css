@@ -46,8 +46,53 @@ RESPONSIVE
         position: fixed;
         height: 20vh;
     }
+    .presentation p {
+       margin: 30px;
+    }
+    .alignTitleExp {
+        position: absolute;
+        left: 20%;
+    }
+    .workcontainer {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    section.work {
+        width: 65vw;
+        height: 50vh;
+    }
+   img.img-work {
+    height: 30vh;
+   }
+   div.background {
+    background: linear-gradient(#1d2726, #013f10);
+    width: 100%;
+    border-radius: 0 0 1.5em 1.5em;
+    padding: 50px;
 }
+div.background p {
+    font-size: 1.2em;
+}
+section.third {
+    margin-top: 20px;
+    margin: 20px 17.4vw;
+}
+div.alignTitleComp {
 
+    margin: auto 100px;
+}
+h1.titlecomp {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    right: 0;
+}
+form.formulaire {
+    margin: 30px 70px auto;
+}
+}
 
 
 
@@ -111,20 +156,23 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #FFFFFF;
+    background: url(/img/Rectangle\ 6.svg);
+    object-fit: cover;
+    object-position: top;
+    background-position: 10%;
+    background-position-x: right;
+    border-left: 5px solid white;
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
     border-radius: 0 5em 5em 0; 
     height : 53vh;
     width  : 50px;
-    clip-path: polygon(100% 0, 100% 28%, 46% 51%, 100% 73%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0 0, 30% 0);
     z-index: 1;
 }
 .comp {
     height: 40px; 
     width: 40px;
-    margin-left: 50px; 
-    z-index: 80;
+    margin-left: 15px;
 }
 .mail {
     height: 25px;
@@ -339,6 +387,8 @@ filter: blur(100px);
 }
 
 .roue {
+    position: relative;
+    float: right;
     margin-right: 15px;
 }
 .Projet {
@@ -382,7 +432,7 @@ Contact
 .return img {
     height: 2vh;
 }
-.form {
+.formulaire {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -397,24 +447,24 @@ Contact
     height: 60vh;
     margin: 30px 50px auto;
 }
-
+.formulaire h3 {
+    margin-top: 20px;
+}
 
 .inputColor {
     color: black;
-    border-radius: 1em;
+    border-radius: 2em;
     background-color: rgba(255, 255, 255, 0.212);
     border: none;
     padding: 10px;
     width: 60vw;
 }
 .Envoyer {
-    align-self: flex-start;
     background: linear-gradient(var(--clr--linear));
     border-radius: 3em;
     font-size: 1em;
     text-align: center;
     padding: 0.2em 0.9em;
-    margin-left: 20px;
     cursor: pointer;
 }
 .socialnetwork {

@@ -25,13 +25,19 @@
             <p>Portfolio</p>
         </aside>
         <aside class="left">
-            <img class="exp" src="../img/exp.png" alt="icon exp">
-            <img class="comp" src="../img/comp.png" alt="icon comp">
-            <img class="mail" src="../img/email.png" alt="icon email">
+            <a href="#experience">
+                <img class="exp" src="../img/exp.png" alt="icon exp">
+            </a>
+            <a href="#competence">
+                <img class="comp" src="../img/comp.png" alt="icon comp">
+            </a>
+            <a href="#email">
+                <img class="mail" src="../img/email.png" alt="icon email">
+            </a>
         </aside>
         </div>
             <div class="presentation">
-                <p>Je m'appelle Cresson Timothée, je suis actuellement en apprentissage dans une formation de Développement web</p> 
+                <p>Je m'appelle Cresson Timothée, je suis actuellement en apprentissage dans une formation de Développement web.</p> 
             </div>
             <div class="shadowLight"></div>
     </header>
@@ -122,10 +128,10 @@
     </div>
     </section>
     <article class="form">
-        <h3>
-            Contactez moi
-        </h3>
-        <form action="contact.html"></form>
+        <form class="formulaire" action="contact.html">
+            <h3>
+                Contactez moi
+            </h3>
         <div>
             <label for="name"></label>
             <input class="name inputColor" type="text" name="text" id="text" placeholder="Votre nom">
@@ -139,6 +145,7 @@
             <textarea name="message" class="inputColor" id="messageme" cols="30" rows="10" placeholder="Votre message..."></textarea>
         </div>
         <input class="Envoyer" type="submit" value="Envoyer">
+    </form>
     </article>
     
     <footer class="socialnetwork">
@@ -149,7 +156,6 @@
             <i class="fab fa-instagram"></i>
         </a>
     </footer>
- 
 </body>
 </html>
 
