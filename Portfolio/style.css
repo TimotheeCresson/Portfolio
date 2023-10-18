@@ -146,7 +146,7 @@ a {
 }
 .centerimg {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
@@ -388,8 +388,7 @@ filter: blur(100px);
 
 .roue {
     position: relative;
-    float: right;
-    margin-right: 15px;
+    margin-left: 10vw;
 }
 .Projet {
     display: flex;
