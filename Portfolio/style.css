@@ -155,12 +155,10 @@ a {
 .left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background: url(/img/Rectangle\ 6.svg);
-    object-fit: cover;
-    object-position: top;
-    background-position: 10%;
+    background-position: center;
     background-position-x: right;
+    justify-content: space-between;
     border-left: 5px solid white;
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
@@ -388,7 +386,6 @@ filter: blur(100px);
 
 .roue {
     position: relative;
-    margin-left: 10vw;
 }
 .Projet {
     display: flex;
