@@ -42,35 +42,41 @@ RESPONSIVE
 ============
 */
 @media screen and (min-width: 662px) {
-    .left{
-        position: fixed;
-        height: 20vh;
-    }
-    .presentation p {
-       margin: 30px;
-    }
-    .alignTitleExp {
-        position: absolute;
-        left: 20%;
-    }
-    .workcontainer {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-    }
-    section.work {
-        width: 65vw;
-        height: 50vh;
-    }
-   img.img-work {
+.left{
+    position: fixed;
+    height: 20vh;
+}
+div.presentation{
+    margin-top: 40px;
+}
+.presentation p {
+    margin: 30px;
+}
+img.centerimg {
+    width: 40vw;
+}
+.alignTitleExp {
+    position: absolute;
+    left: 20%;
+}
+.workcontainer {
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+}
+section.work {
+    width: 65vw;
+    height: 50vh;
+}
+img.img-work {
     height: 30vh;
-   }
-   div.background {
+}
+div.background {
     background: linear-gradient(#1d2726, #013f10);
     width: 100%;
     border-radius: 0 0 1.5em 1.5em;
-    padding: 50px;
+    padding: 70px;
 }
 div.background p {
     font-size: 1.2em;
@@ -80,7 +86,6 @@ section.third {
     margin: 20px 17.4vw;
 }
 div.alignTitleComp {
-
     margin: auto 100px;
 }
 h1.titlecomp {
@@ -91,6 +96,23 @@ h1.titlecomp {
 }
 form.formulaire {
     margin: 30px 70px auto;
+}
+.roue {
+    float: right;
+}
+article.Projet {
+    display: inline-block;
+    height: 40vh;
+    width: 30vw;
+    font-size: 1.3em;
+    line-height: 3em;
+    margin-left: 70px;
+}
+a.btn.CV {
+    padding: 15px;
+}
+textarea.inputColor{
+    height: 250px;
 }
 }
 
@@ -158,12 +180,12 @@ a {
     background: url(/img/Rectangle\ 6.svg);
     background-position: center;
     background-position-x: right;
+    background-size: cover;
     justify-content: space-between;
-    border-left: 5px solid white;
     border-top: 40px solid transparent;
     border-bottom: 40px solid transparent;
     border-radius: 0 5em 5em 0; 
-    height : 53vh;
+    height : 430.35px;
     width  : 50px;
     z-index: 1;
 }
@@ -210,7 +232,7 @@ a {
 .presentation p {
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 5vh 2vw 5vh 2vw;
     font-size: 1.5em;
 }
 
@@ -272,6 +294,7 @@ Expérience
     background: linear-gradient(#1d2726, #013f10);
     width: 100%;
     border-radius: 0 0 1.5em 1.5em;
+    padding-bottom: 20px;
 }
 .background p {
     text-align: center;
@@ -279,6 +302,7 @@ Expérience
     text-transform: capitalize;
     font-size: 0.7em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
 }
 .first {
     margin-left: 10px;
@@ -312,10 +336,17 @@ Expérience
     margin-top: 40px;
 }
 .CV {
+    height: 7vh;
+    width: 200px;
     position: relative;
-    margin: 20px 30vw;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
     z-index: 6;
+    font-size: 1.2em;
+}
+a.CV {
+    padding: 15px ;
 }
 
 
@@ -332,7 +363,7 @@ Compétence
     position: relative;
     width: 300px;
     height: 300px;
-    margin: auto 20px;
+    margin: auto 35px;
 }
 .persoComp {
     position: relative;
@@ -386,6 +417,11 @@ filter: blur(100px);
 
 .roue {
     position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+   margin-left: auto;
+   margin-right: auto
 }
 .Projet {
     display: flex;
@@ -474,12 +510,18 @@ Contact
     height: 20vh;
 }
 .socialnetwork p {
+    display: block;
     font-size: 1.3em;
     text-align: center;
     padding: 20px;
 }
+.socialFooter {
+    display: flex;
+    justify-content: space-evenly;
+}
 .social-icon{
+    display: inline-block;
     font-size: 5vh;
-    margin: auto 5px auto 85px;
+    
 }
 
