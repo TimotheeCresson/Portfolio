@@ -35,6 +35,9 @@ h1 {
 *{
     color: white;
 }
+.marge {
+    margin-top: 80px;
+}
 
 /*
 ============ 
@@ -53,17 +56,17 @@ div.presentation{
     margin: 30px;
 }
 img.centerimg {
-    width: 40vw;
+    width: 250px;
 }
 .alignTitleExp {
     position: absolute;
     left: 20%;
 }
-.workcontainer {
-flex-direction: column;
-justify-content: space-between;
+div.workcontainer {
+display: grid;
+grid-template-rows: repeat(2, 1fr);
 align-items: center;
-gap: 20px;
+gap: 40px;
 }
 section.work {
     width: 65vw;
@@ -82,8 +85,7 @@ div.background p {
     font-size: 1.2em;
 }
 section.third {
-    margin-top: 20px;
-    margin: 20px 17.4vw;
+    margin: 40px 17.4vw;
 }
 div.alignTitleComp {
     margin: auto 100px;
@@ -97,13 +99,15 @@ h1.titlecomp {
 form.formulaire {
     margin: 30px 70px auto;
 }
-.roue {
+img.roue {
     float: right;
+    width: 50%;
+    height: 50%;
 }
 article.Projet {
     display: inline-block;
     height: 40vh;
-    width: 30vw;
+    width: 35%;
     font-size: 1.3em;
     line-height: 3em;
     margin-left: 70px;
@@ -112,7 +116,10 @@ a.btn.CV {
     padding: 15px;
 }
 textarea.inputColor{
-    height: 250px;
+    height: 220px;
+}
+section.entêtecontact {
+    margin-top: 200px;
 }
 }
 
@@ -256,9 +263,7 @@ Expérience
 ===========
 */
 
-.expsection {
-    margin-top: 50px;
-}
+
 .alignTitleExp {
     position: relative;
     width: 300px;
@@ -356,9 +361,7 @@ Compétence
 ===========
 */
 
-.compsection {
-    margin-top: 50px;
-}
+
 .alignTitleComp {
     position: relative;
     width: 300px;
@@ -420,8 +423,8 @@ filter: blur(100px);
     max-width: 100%;
     height: auto;
     display: block;
-   margin-left: auto;
-   margin-right: auto
+    margin-left: auto;
+    margin-right: auto
 }
 .Projet {
     display: flex;
@@ -452,9 +455,7 @@ filter: blur(100px);
 Contact
 ===========
 */
-.entêtecontact {
-    margin-top: 40px;
-}
+
 .return {
     display: flex;
     flex-direction: row;
