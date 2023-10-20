@@ -17,6 +17,10 @@ FONTS
     font-family: "Poppins";
     src: url("../font/Poppins-Medium.ttf");
 }
+@font-face {
+    font-family: "PoppinsLight";
+    src: url("../font/Poppins-Light.ttf");
+}
 /*
 ==========
 VARIABLE
@@ -44,84 +48,7 @@ h1 {
 RESPONSIVE
 ============
 */
-@media screen and (min-width: 662px) {
-.left{
-    position: fixed;
-    height: 20vh;
-}
-div.presentation{
-    margin-top: 40px;
-}
-.presentation p {
-    margin: 30px;
-}
-img.centerimg {
-    width: 250px;
-}
-.alignTitleExp {
-    position: absolute;
-    left: 20%;
-}
-div.workcontainer {
-display: grid;
-grid-template-rows: repeat(2, 1fr);
-align-items: center;
-gap: 40px;
-}
-section.work {
-    width: 65vw;
-    height: 50vh;
-}
-img.img-work {
-    height: 30vh;
-}
-div.background {
-    background: linear-gradient(#1d2726, #013f10);
-    width: 100%;
-    border-radius: 0 0 1.5em 1.5em;
-    padding: 70px;
-}
-div.background p {
-    font-size: 1.2em;
-}
-section.third {
-    margin: 40px 17.4vw;
-}
-div.alignTitleComp {
-    margin: auto 100px;
-}
-h1.titlecomp {
-    position: absolute;
-    top: 20px;
-    left: 150px;
-    right: 0;
-}
-form.formulaire {
-    margin: 30px 70px auto;
-}
-img.roue {
-    float: right;
-    width: 50%;
-    height: 50%;
-}
-article.Projet {
-    display: inline-block;
-    height: 40vh;
-    width: 35%;
-    font-size: 1.3em;
-    line-height: 3em;
-    margin-left: 70px;
-}
-a.btn.CV {
-    padding: 15px;
-}
-textarea.inputColor{
-    height: 220px;
-}
-section.entêtecontact {
-    margin-top: 200px;
-}
-}
+
 
 
 
@@ -133,6 +60,7 @@ First page : présentation
 body {
     background-color: #051D0B;
     overflow-x: hidden;
+    font-size: 100%;
 }
 header {
     min-height: 80vh;
@@ -145,18 +73,10 @@ a {
 .entete {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 15px;
 }
-.enteteComp {
-    float: left;
-    margin: 20px
-}
-.enteteExp {
-    float: right;
-    margin: 20px;
-}
-
 .enteteContact {
-    display: block;
     text-align: center;
     margin: auto 30vw;
 }
@@ -164,14 +84,12 @@ a {
     display: block;
     background: linear-gradient(var(--clr--linear));
     border-radius: 3em;
-    font-size: 1em;
+    font-size: 4vw;
     border: 2px solid white;
-    text-align: center;
     padding: 0.2em 0.9em;
 }
 .logo {
-    margin-top: 20px;
-    height: 4vh;
+    height: 5vh;
 }
 .centerimg {
     position: absolute;
@@ -179,7 +97,6 @@ a {
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
-    height: auto;
 }
 .left {
     display: flex;
@@ -234,12 +151,12 @@ a {
     background-clip: content-box, border-box;
     width: 80vw;
     height: 30vh;
-    margin: 20px auto auto auto;
+    margin: 20px auto;
 }
 .presentation p {
     color: white;
     text-align: center;
-    padding: 5vh 2vw 5vh 2vw;
+    padding: 5vh 2vw ;
     font-size: 1.5em;
 }
 
@@ -268,10 +185,7 @@ Expérience
     position: relative;
     width: 300px;
     height: 300px;
-    margin: auto 20px;
-}
-.persoexp {
-    position: relative;
+    left: 10px;
 }
 .titleexp {
     position: absolute;
@@ -282,6 +196,8 @@ Expérience
 .workcontainer {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .work {
     display: flex;
@@ -291,54 +207,42 @@ Expérience
     border-radius: 1.5em;
     background: linear-gradient(#2e4b47, #013f10);
     box-shadow: inset 0px -5px 0 #4b615e, #013f10;
-    height: 17vh;
+    height: 25vh;
     width: 45vw;
 }
 
+.img-work{
+    width: 30vw;
+    height: 19vh;
+}
+.third {
+    background: linear-gradient(#0c1312, #013f10, #0c1312);
+}
 .background {
     background: linear-gradient(#1d2726, #013f10);
     width: 100%;
+    height: 60px;
     border-radius: 0 0 1.5em 1.5em;
-    padding-bottom: 20px;
 }
 .background p {
+    word-wrap: break-word;
     text-align: center;
-    margin-top: 10px;
     text-transform: capitalize;
-    font-size: 0.7em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 5px;
-}
-.first {
-    margin-left: 10px;
-}
-.second {
-    margin-right: 10px;
-}
-.img-work{
-    object-fit: cover;
-    width: auto;
-    height: 11vh;
-}
-.third {
-    margin: auto 28vw;
-    background: linear-gradient(#0c1312, #013f10);
-}
-.third div.background {
-    background: linear-gradient(#013f10,#0c1312);
+    font-family: PoppinsLight;
+    font-size: 0.86em;
 }
 .infoCV {
     text-align: center;
     color: white;
     font-family: Poppins;
-    font-weight: 10;
+    width: 70%;
     font-size: 1.5em;
-    width: 80%;
-    padding: 20px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 .textCV {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .CV {
     height: 7vh;
@@ -351,7 +255,8 @@ Expérience
     font-size: 1.2em;
 }
 a.CV {
-    padding: 15px ;
+    padding: 0.8rem 0;
+    text-align: center;
 }
 
 
@@ -360,13 +265,24 @@ a.CV {
 Compétence
 ===========
 */
-
-
+.shadowLightComp {
+    position: absolute;
+    width: 503px;
+    height: 610px;
+    left: 39px;
+    top: -200px;
+    background: radial-gradient(40.8% 40.8% at 50% 50.2%, #089C2D 10%, rgba(23, 29, 61, 0) 80%);
+    filter: blur(100px);
+    }
+.compsection {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
 .alignTitleComp {
     position: relative;
     width: 300px;
     height: 300px;
-    margin: auto 35px;
 }
 .persoComp {
     position: relative;
@@ -374,15 +290,6 @@ Compétence
     width: 167px;
     filter: opacity(80%);
     z-index: 10;
-}
-.shadowLightComp {
-position: absolute;
-width: 503px;
-height: 610px;
-left: 39px;
-top: -200px;
-background: radial-gradient(40.8% 40.8% at 50% 50.2%, #089C2D 10%, rgba(23, 29, 61, 0) 80%);
-filter: blur(100px);
 }
 .titlecomp {
     position: absolute;
@@ -400,15 +307,16 @@ filter: blur(100px);
     background-origin: border-box;
     background-clip: content-box, border-box;
     font-size: 1.2em;
-    width: 80vw;
+    width: 90vw;
     height: 13vh;
-    margin-left: 10px;
+    margin: auto 20px;
 }
 .midComp p {
     color: white;
     letter-spacing: 0.03em;
     text-align: center;
-    padding: 7px;
+    padding: 5px;
+    margin: auto 20px;
 }
 .titlecomp {
     color: white;
@@ -421,15 +329,13 @@ filter: blur(100px);
 .roue {
     position: relative;
     max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+    right: 10px;
 }
 .Projet {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     border: 1px solid transparent;
     border-radius: 1em;
     background-image: linear-gradient(#05250ee0, #000c03e0), linear-gradient(to right, gray, black);
@@ -445,7 +351,6 @@ filter: blur(100px);
 }
 .projectLi ul li {
     list-style: none;
-    text-align: center;
     font-size: 1.2em;
 }
 
@@ -458,18 +363,17 @@ Contact
 
 .return {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     margin-top: 30px;
 }
 .return img {
-    height: 2vh;
+    height: 15px;
 }
 .formulaire {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-evenly;
     align-items: center;
     border: 1px solid transparent;
     border-radius: 3em;
@@ -480,12 +384,9 @@ Contact
     height: 60vh;
     margin: 30px 50px auto;
 }
-.formulaire h3 {
-    margin-top: 20px;
-}
-
 .inputColor {
-    color: black;
+    color: rgb(253, 251, 251);
+    font-size: 0.9em;
     border-radius: 2em;
     background-color: rgba(255, 255, 255, 0.212);
     border: none;
@@ -493,12 +394,12 @@ Contact
     width: 60vw;
 }
 .Envoyer {
-    background: linear-gradient(var(--clr--linear));
     border-radius: 3em;
     font-size: 1em;
     text-align: center;
     padding: 0.2em 0.9em;
     cursor: pointer;
+    background: linear-gradient(var(--clr--linear));
 }
 .socialnetwork {
     border: 1px solid transparent;
@@ -508,7 +409,7 @@ Contact
     background-origin: border-box;
     background-clip: content-box, border-box;
     margin: 30px 20px 0 20px;
-    height: 20vh;
+    height: 23vh;
 }
 .socialnetwork p {
     display: block;
@@ -521,8 +422,106 @@ Contact
     justify-content: space-evenly;
 }
 .social-icon{
-    display: inline-block;
     font-size: 5vh;
     
 }
 
+
+@media screen and (min-width: 618px) {
+    .btn {
+        font-size: 25px;
+    }
+    .left{
+        position: fixed;
+    }
+    .presentation p {
+        padding: 60px;
+    }
+    .centerimg {
+        margin-top: 40px;
+        width: 298px;
+    }
+    .alignTitleExp {
+        left: 20%;
+    }
+    .workcontainer {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .work {
+        width: 65vw;
+        height: 50vh;
+    }
+    .img-work {
+        height: 30vh;
+    }
+    .background {
+        background: linear-gradient(#1d2726, #013f10);
+        padding: 70px;
+    }
+    .background p {
+        font-size: 1.2em;
+    }
+    .third {
+    background: linear-gradient(#1d2726, #013f10);
+}
+    .alignTitleComp {
+        left: 20%;
+    }
+    .midComp {
+        left: -70px;
+        width: 80vw;
+    }
+    .midComp p{
+        padding: 23px;
+    }
+    .wheel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .roue {
+        height: 436px;
+    }
+    .formulaire {
+        margin: 30px 70px auto;
+    }
+    #messageme {
+        height: 220px;
+    }
+    .socialnetwork p {
+        margin: 15px;
+    }
+    }
+
+    @media screen and (min-width: 918px) {
+        .left {
+            position: static;
+        }
+        .presentation p {
+            padding: 80px;
+        }
+        .alignTitleExp {
+            left: 5%;
+        }
+        .titleexp {
+            font-size: 60px;
+            top: 37px;
+            left: 118px;
+        }
+        .workcontainer {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            }
+        .work {
+            height: 40vh;
+            width: 30vw;
+        }
+        .img-work {
+            height: 20vh;
+            width: 20vw;
+        }
+    }

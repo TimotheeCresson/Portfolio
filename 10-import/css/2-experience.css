@@ -1,0 +1,96 @@
+/*
+===========
+Expérience 
+===========
+*/
+
+
+.alignTitleExp {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto 20px;
+}
+.persoexp {
+    position: relative;
+}
+.titleexp {
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    right: -18px;
+}
+.workcontainer {
+    display: flex;
+    justify-content: space-around;
+}
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1.5em;
+    background: linear-gradient(#2e4b47, #013f10);
+    box-shadow: inset 0px -5px 0 #4b615e, #013f10;
+    height: 17vh;
+    width: 45vw;
+}
+
+.background {
+    background: linear-gradient(#1d2726, #013f10);
+    width: 100%;
+    border-radius: 0 0 1.5em 1.5em;
+    padding-bottom: 20px;
+}
+.background p {
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 0.7em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+.first {
+    margin-left: 10px;
+}
+.second {
+    margin-right: 10px;
+}
+.img-work{
+    object-fit: cover;
+    width: auto;
+    height: 11vh;
+}
+.third {
+    margin: auto 28vw;
+    background: linear-gradient(#0c1312, #013f10);
+}
+.third div.background {
+    background: linear-gradient(#013f10,#0c1312);
+}
+.infoCV {
+    text-align: center;
+    color: white;
+    font-family: Poppins;
+    font-weight: 10;
+    font-size: 1.5em;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+.textCV {
+    margin-top: 40px;
+}
+.CV {
+    height: 7vh;
+    width: 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    z-index: 6;
+    font-size: 1.2em;
+}
+a.CV {
+    padding: 15px ;
+}

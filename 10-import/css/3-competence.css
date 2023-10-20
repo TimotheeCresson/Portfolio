@@ -1,0 +1,93 @@
+/*
+===========
+Compétence
+===========
+*/
+
+
+.alignTitleComp {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto 35px;
+}
+.persoComp {
+    position: relative;
+    height: 264px;
+    width: 167px;
+    filter: opacity(80%);
+    z-index: 10;
+}
+.shadowLightComp {
+position: absolute;
+width: 503px;
+height: 610px;
+left: 39px;
+top: -200px;
+background: radial-gradient(40.8% 40.8% at 50% 50.2%, #089C2D 10%, rgba(23, 29, 61, 0) 80%);
+filter: blur(100px);
+}
+.titlecomp {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    right: 0;
+}
+.midComp {
+    position: absolute;
+    bottom: 45px;
+    border: 1.3px solid transparent;
+    border-radius: 1em;
+    background-image: linear-gradient(#05240e, #03290dd8), 
+    linear-gradient(to right, gray, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    font-size: 1.2em;
+    width: 80vw;
+    height: 13vh;
+    margin-left: 10px;
+}
+.midComp p {
+    color: white;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 7px;
+}
+.titlecomp {
+    color: white;
+    font-weight: bold;
+    grid-row: 1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.roue {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.Projet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-image: linear-gradient(#05250ee0, #000c03e0), linear-gradient(to right, gray, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    width: 80vw;
+    height: 20vh;
+    margin: 30px auto auto auto;
+}
+.Projet h3 {
+    text-align: center;
+    font-size: 1.4em;
+}
+.projectLi ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 1.2em;
+}

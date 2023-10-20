@@ -1,0 +1,77 @@
+
+/*
+===========
+Contact
+===========
+*/
+
+.return {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.return img {
+    height: 2vh;
+}
+.formulaire {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 3em;
+    background-image: linear-gradient(#05250ee0, #000c03e0), 
+    linear-gradient(to right, gray, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    height: 60vh;
+    margin: 30px 50px auto;
+}
+.formulaire h3 {
+    margin-top: 20px;
+}
+
+.inputColor {
+    color: black;
+    border-radius: 2em;
+    background-color: rgba(255, 255, 255, 0.212);
+    border: none;
+    padding: 10px;
+    width: 60vw;
+}
+.Envoyer {
+    background: linear-gradient(var(--clr--linear));
+    border-radius: 3em;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.2em 0.9em;
+    cursor: pointer;
+}
+.socialnetwork {
+    border: 1px solid transparent;
+    border-radius: 1em;
+    background-image: linear-gradient(#05250ee0, #000c03e0), 
+    linear-gradient(to right, gray, black);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin: 30px 20px 0 20px;
+    height: 20vh;
+}
+.socialnetwork p {
+    display: block;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 20px;
+}
+.socialFooter {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-icon{
+    display: inline-block;
+    font-size: 5vh;
+    
+}
+

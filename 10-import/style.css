@@ -1,0 +1,7 @@
+@import url("./css/default.css");
+@import url("./css/1-presentation.css");
+@import url("./css/2-experience.css");          /* Dossier pours les imports à mettre dnsa l'ordre, le default en premier */
+@import url("./css/3-competence.css");
+@import url("./css/4-contact.css");
+
+/*@import url("./css/desktop.css") screen and (min-width: 900px);*/
