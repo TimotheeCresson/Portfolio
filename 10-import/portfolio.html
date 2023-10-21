@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!--<link rel="stylesheet" href="style.css">-->
-    <link rel="stylesheet" href="without-import.css">
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
         <!-------------------------- Présentation -------------------- -->
@@ -25,17 +26,33 @@
         <aside class="right">
             <p>Portfolio</p>
         </aside>
-        <aside class="left">
-            <a href="#experience">
-                <img class="exp" src="../img/exp.png" alt="icon exp">
-            </a>
-            <a href="#competence">
-                <img class="comp" src="../img/comp.png" alt="icon comp">
-            </a>
-            <a href="#email">
-                <img class="mail" src="../img/email.png" alt="icon email">
-            </a>
-        </aside>
+        <div class="navigation">
+            <ul>
+                <li class="list hover" style="--clr:#00FFE0;">
+                    <a href="#experience">
+                        <span class="icon">
+                            <i class="fa-regular fa-folder" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:#05250ee0;">
+                    <a href="#competence">
+                        <span class="icon">
+                            <i class="fa-regular fa-lightbulb" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="list" style="--clr:#00FFE0;">
+                    <a href="#email">
+                        <span class="icon">
+                            <i class="fa-regular fa-envelope" style="color: #000000;"></i>
+                        </span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+            
+        </div>
         </div>
             <div class="presentation">
                 <p>Je m'appelle Cresson Timothée, je suis actuellement en apprentissage dans une formation de Développement web.</p> 
@@ -53,6 +70,21 @@
                 Expériences
             </h1>
             <img class="persoExp" src="../img/persoExp.png" alt="">
+        </div>
+        <div class="allNav">
+            <a href="#experience">
+                <img src="../img/exp2.png" alt="image Expériences">
+            </a>
+            <a href="#experience"><p>Expériences</p></a>
+            <a href="#competence">
+                <img src="../img/comp.png" alt="image Compétences">
+            </a>
+            <a href="#competence"><p>Compétences</p></a>
+            <a href="#contact">
+                <img src="../img/mail2.png" alt="image contact">
+            </a>
+                <a href="#contact"><p>Contact</p>
+            </a>
         </div>
         <div class="workcontainer">
             <section class="work">
@@ -74,10 +106,12 @@
                 </div>
             </section>
         </div>
+        <div class="CvPlacement">
             <div class="infoCV textCV">
                 <p> Pour en savoir plus, n'hésitez pas à consulter mon CV ci-dessous</p>
             </div>
             <a class="btn CV" href="#">Curriculum Vitae</a>
+        </div>
     </article>
             <!----------------------------- Compétences --------------------------->
     <section class="compsection marge" id="competence">
@@ -93,8 +127,23 @@
                 </p>
             </div>
             </div>
+            <div class="allNav">
+                <a href="#experience">
+                    <img src="../img/exp2.png" alt="image Expériences">
+                </a>
+                <a href="#experience"><p>Expériences</p></a>
+                <a href="#competence">
+                    <img src="../img/comp.png" alt="image Compétences">
+                </a>
+                <a href="#competence"><p>Compétences</p></a>
+                <a href="#contact">
+                    <img src="../img/mail2.png" alt="image contact">
+                </a>
+                    <a href="#contact"><p>Contact</p>
+                </a>
+            </div>
             <div class="wheel">
-                <img class="roue" src="../img/imagecomp.png" alt="compétence roue">
+                <img class="roue rotate" src="../img/imagecomp.png" alt="compétence roue">
             </div> 
             <article class="Projet">
                 <h3>
@@ -129,13 +178,13 @@
     </div>
     </section>
     <article class="form">
-        <form class="formulaire" action="contact.html">
+        <form class="formulaire" action="mailto:timotheecresson@hotmail.fr?subject=Objet Message" name="envoi" method=POST enctype="text/plain" >
             <h3>
                 Contactez moi
             </h3>
         <div>
             <label for="name"></label>
-            <input class="name inputColor" type="text" name="text" id="text" placeholder="Votre nom">
+            <input class="name inputColor" type="text" name="name" id="text" placeholder="Votre nom">
         </div>
         <div>
             <label for="email"></label>
