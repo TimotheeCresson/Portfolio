@@ -44,6 +44,7 @@ h1 {
 }
 .allNav {
     display: none;
+    z-index: 8;
 }
 .allNav img {
     height: 15px;
@@ -326,12 +327,49 @@ Expérience
     height: 300px;
     left: 10px;
 }
+.persoExp {
+    animation: rotation 2s linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {transform: rotate(45deg);}
+    to{transform: rotate(0deg);}
+}
+
 .titleexp {
     position: absolute;
     top: 60px;
     left: 90px;
     right: -18px;
-}
+    animation: mouvement 2s linear;
+}/*
+@keyframes mouvement {
+    from { 
+        rotate: 0;
+    }
+    30% {
+        rotate: 0;
+        top: 30vw;
+        right: -10vw;
+    }
+    50% {
+        rotate: 40deg;
+    }
+    60% {
+        rotate: 70deg;
+    }
+    70% {
+        rotate: 90deg;
+    }
+    to {   
+        rotate: 0;
+        bottom: 100vh;
+        height: 250px;
+        width: 250px;
+    }
+}*/
 .workcontainer {
     display: flex;
     justify-content: space-around;
@@ -659,6 +697,7 @@ Contact
         width: 400px;
     }
     .centerimg {
+        margin-top: 50px;
         width: 298px;
     }
     .alignTitleExp {
