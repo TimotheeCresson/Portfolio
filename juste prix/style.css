@@ -29,10 +29,10 @@ body {
     background-color: rgb(199, 36, 36);
 }
 .devine {
-    border: 1px solid black;
-    height: 3em;
-    width: 4em;
+    font-size: 40px;
+    text-align: center;
 }
+.hidden{display: none;}
 .again {
     border: none;
     text-decoration: none;
@@ -46,13 +46,12 @@ body {
     background-color: white;
     color: black;
 }
-.texte {
-    border: 1px solid black;
-    width: 40em;
-    height: 5em;
+.texte{
     margin-top: 5em;
+    font-size: 30px;
+    text-align: center;
 }
-.nombre {
+#guess {
     border: 3px solid rgb(0, 204, 255);
     border-radius: 0.5em;
     background-color: rgb(238, 222, 222);
@@ -60,7 +59,14 @@ body {
     width: 5em;
     margin-top: 5em;
 }
-.btn {
+#guess:disabled {
+    background-color: gray;
+    border: none;
+}
+.nombre {
+    color: white;
+}
+#submit {
     border: none;
     text-decoration: none;
     padding: 0.2rem 0.2rem;
@@ -72,3 +78,4 @@ body {
     background-color: white;
     color: black;
 }
+#submit:disabled {background-color: grey;}

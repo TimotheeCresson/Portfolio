@@ -250,9 +250,9 @@ a {
     linear-gradient(to right, gray, black);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    width: 80vw;
+    width: 90vw;
     height: 30vh;
-    margin: 20px auto;
+    margin: 10px auto;
     animation: fromRight 2s linear;
 }
 .presentation p {
