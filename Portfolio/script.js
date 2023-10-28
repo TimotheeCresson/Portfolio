@@ -48,25 +48,31 @@ item.addEventListener('mousemove', activeLink))
 Animation Title Experience
 ==========================
 */
-/*
+
 const persoExp = document.querySelector(".persoExp")
-const titleExp = document.querySelector(".titleExp")
+const titleExp = document.querySelector(".titleexp")
+const animationWork = document.querySelector(".workcontainer")
 
 const option = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.8,
+  threshold: 0.4,
 }
 const observer2 = new IntersectionObserver(flipExp, option);
 function flipExp (entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      persoExp.style.transform = `rotate(45deg)`
+      persoExp.classList.add("animationExpPerso")
+      titleExp.classList.add("animationExpTitle")
+      animationWork.classList.add("animationWork")
     } else {
-      persoExp.style.transform = ``
+      persoExp.classList.remove("animationExpPerso")
+      titleExp.classList.remove("animationExpTitle")
+      animationWork.classList.remove("animationWork")
     }
   });
 }
-observer2.observe(persoExp);
+observer2.observe(persoExp, titleExp, animationWork);
 console.log(observer2);
-*/
+
+

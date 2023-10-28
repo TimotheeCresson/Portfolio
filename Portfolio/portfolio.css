@@ -36,6 +36,10 @@ h1 {
     text-align: center;
     color: white;
 }
+h3 {
+    font-family: poppins;
+    font-size: 1em;
+}
 *{
     color: white;
 }
@@ -51,6 +55,13 @@ h1 {
 }
 .btn {
     font-family: PoppinsLight;
+}
+.return a p:hover, .allNav a p:hover {
+    color: #00FFE0;
+}
+.return a p, .allNav a p {
+    font-family: poppinsLight;
+    font-size: 0.8em;
 }
 /*
 ============ 
@@ -219,7 +230,7 @@ a {
 }
 .centerimg {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 50%;
@@ -251,13 +262,13 @@ a {
     background-origin: border-box;
     background-clip: content-box, border-box;
     width: 90vw;
-    height: 30vh;
-    margin: 10px auto;
+    height: 20vh;
+    margin: 5px auto;
     animation: fromRight 2s linear;
 }
 .presentation p {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.1em;
     text-align: center;
     font-family: PoppinsLight;
 }
@@ -327,49 +338,21 @@ Expérience
     height: 300px;
     left: 10px;
 }
-.persoExp {
-    animation: rotation 2s linear;
-}
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    50% {transform: rotate(45deg);}
-    to{transform: rotate(0deg);}
-}
-
 .titleexp {
     position: absolute;
     top: 60px;
     left: 90px;
     right: -18px;
-    animation: mouvement 2s linear;
-}/*
-@keyframes mouvement {
-    from { 
-        rotate: 0;
-    }
-    30% {
-        rotate: 0;
-        top: 30vw;
-        right: -10vw;
-    }
-    50% {
-        rotate: 40deg;
-    }
-    60% {
-        rotate: 70deg;
-    }
-    70% {
-        rotate: 90deg;
-    }
-    to {   
-        rotate: 0;
-        bottom: 100vh;
-        height: 250px;
-        width: 250px;
-    }
-}*/
+    
+}
+.animationExpPerso {
+    animation: rotation 0.7s linear;
+}
+
+.animationExpTitle {
+    animation: mouvement 3s linear, backflip 1.5s linear 1s;
+}
+
 .workcontainer {
     display: flex;
     justify-content: space-around;
@@ -387,7 +370,17 @@ Expérience
     height: 25vh;
     width: 45vw;
 }
-
+.animationWork {
+    animation: 1s scale both;
+}
+@keyframes scale {
+    from {
+        scale: 0.5;
+    }
+    to {
+        scale: 1;
+    }
+}
 .img-work{
     width: 30vw;
     height: 19vh;
@@ -433,6 +426,57 @@ Expérience
     z-index: 6;
     font-size: 1.2em;
 }
+
+@keyframes rotation {
+    from {
+        transform: rotate(45deg);
+    }
+    20% {
+        transform: rotate(40deg);
+    }
+    40% {transform: rotate(35deg);}
+    60% {transform: rotate(30deg);}
+    80%{transform: rotate(25deg);}
+    
+    to{transform: rotate(0deg);}
+}
+@keyframes mouvement {
+    from { 
+        rotate: 45deg;
+        top: 5em;
+        right: -.8em;
+    }
+    20% {
+        rotate: 40deg;
+        top: 4em;
+        right: -.8em;
+    }
+    30% {
+        rotate: 20deg;
+        top: 20px
+    }
+   
+    to {   
+        rotate: 0deg;
+       
+    }
+}
+@keyframes backflip {
+    from { 
+        rotate: 0deg;
+    }
+    50% {
+        top: 30px;
+    }
+    to {   
+        rotate: -360deg;
+       
+    }
+}
+
+
+
+
 
 
 /*
@@ -493,6 +537,8 @@ Compétence
     color: white;
     letter-spacing: 0.03em;
     text-align: center;
+    font-size: 0.8em;
+    font-family: poppinsLight;
 }
 .titlecomp {
     color: white;
@@ -529,11 +575,13 @@ Compétence
 }
 .Projet h3 {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1em;
+    font-family: poppins;
 }
 .projectLi ul li {
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-family: poppinsLight;
 }
 
 .projetFormation {
@@ -545,6 +593,12 @@ Compétence
     font-size: 1.2em;
     margin-top: 60px;
     margin-bottom: 40px;
+}
+.creation div a:hover {
+    border: 1px solid  #00FFE0;
+    outline: 0.125rem solid #00FFE0;
+    outline-offset: 0.2rem;
+    padding: 5px;
 }
 .creation img {
     margin-top: 50px;
@@ -614,13 +668,18 @@ Contact
     margin: 30px 50px auto;
 }
 .inputColor {
-    color: rgb(253, 251, 251);
     font-size: 0.9em;
     border-radius: 2em;
     background-color: rgba(255, 255, 255, 0.212);
     border: none;
     padding: 10px;
     width: 60vw;
+}
+.inputColor::placeholder {
+    font-size: 1.2em;
+    color: white;
+    font-weight: 500;
+    font-family: poppinLight;
 }
 .Envoyer {
     border-radius: 3em;
@@ -642,9 +701,10 @@ Contact
 }
 .socialnetwork p {
     display: block;
-    font-size: 1.3em;
+    font-size: 1em;
     text-align: center;
     padding: 20px;
+    font-family: poppinsLight;
 }
 .socialFooter {
     display: flex;
@@ -694,10 +754,10 @@ Contact
         margin: auto auto;
     }
     .presentation {
-        width: 400px;
+        width: 70vw;
     }
     .centerimg {
-        margin-top: 50px;
+        top: 50%;
         width: 298px;
     }
     .alignTitleExp {
@@ -774,6 +834,13 @@ Contact
         .navigation {
             position: relative;
         }
+        .presentation {
+            width: 800px;
+        }
+        .presentation p {
+            padding: 10px;
+            line-height: 2em;
+        }
         .expsection {
             display: grid;
             grid-template-columns: repeat(2, auto);
@@ -787,12 +854,6 @@ Contact
         background: radial-gradient(49.8% 49.8% at 50% 50.2%, #028924b7 0%, rgba(6, 190, 214, 0.192) 60%);
         filter: blur(160px);
         }
-        .presentation {
-            height: 200px;
-        }
-        .presentation p {
-            padding: 80px;
-        }
         .alignTitleExp {
             left: 5%;
         }
@@ -800,6 +861,10 @@ Contact
             font-size: 60px;
             top: 37px;
             left: 118px;
+            animation: none;
+        }
+        .persoExp {
+            animation: none;
         }
         .workcontainer {
             flex-direction: row;
@@ -815,15 +880,15 @@ Contact
             height: 50px;
             padding: 5px;
         }
-        .presentation {
-            width: 800px;
-        }
         .img-work {
             height: 150px;
             width: 150px;
         }
         .CV {
             margin-top: 30px;
+        }
+        .centerimg {
+            margin-bottom: 0;
         }
         .compsection {
             display: grid;
@@ -835,6 +900,7 @@ Contact
             left: -60px;
             top: 7px;
         }
+        
         .midComp {
             width: 500px;
             left: -77px;
