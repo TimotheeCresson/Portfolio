@@ -11,15 +11,15 @@ FONTS
 
 @font-face {
     font-family: "RampartOne";
-    src: url("../font/RampartOne-Regular.ttf");
+    src: url("./font/RampartOne-Regular.ttf");
 }
 @font-face {
     font-family: "Poppins";
-    src: url("../font/Poppins-Medium.ttf");
+    src: url("./font/Poppins-Medium.ttf");
 }
 @font-face {
     font-family: "PoppinsLight";
-    src: url("../font/Poppins-Light.ttf");
+    src: url("./font/Poppins-Light.ttf");
 }
 /*
 ==========
