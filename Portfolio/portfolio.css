@@ -28,6 +28,7 @@ VARIABLE
 */
 :root {
     --clr--linear : #073513e0, #00FFE0;
+    scroll-snap-type:y mandatory;
 }
 
 
